@@ -1,5 +1,6 @@
 import express, { Request, Response } from 'express';
 import healthRoutes from './api/v1/routes/healthRoutes';
+import portfolioRoutes from './api/v1/routes/portfolioRoutes';
 
 const app = express();
 
@@ -12,5 +13,6 @@ app.get('/', (_req: Request, res: Response) => {
 });
 
 app.use('/api/v1', healthRoutes);
+app.use('/api/v1', portfolioRoutes);
 
 export default app;
