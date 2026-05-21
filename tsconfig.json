@@ -4,6 +4,8 @@
         "target": "ES6",
         "module": "Node16",
         "strict": true,
+        "types": ["node", "jest"],
+        "isolatedModules": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
